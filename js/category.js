@@ -2,7 +2,7 @@ var loadThreads = function(cursor){
 	$("#threads").html('');
 	$('#thread-loader').show();
 	var data = { 
-		api_key: '',
+		api_key: 'lWEmapKgRGWmYLuX5INGRBtSx8WakniYLMkqlXngY5Hx84ODJlWGfG0rYib11BRm',
 		category : $('#threads').attr('data-id')
 	};
 	if(cursor){
@@ -16,7 +16,7 @@ var loadThreads = function(cursor){
 		dataType: "jsonp",
 		success: function (result) {
 			var authors = [];
-			$.Mustache.load('/templates/thread.html').done(function() {
+			$.Mustache.load('/kingdomstats/templates/thread.html').done(function() {
 				$('#thread-loader').hide();
 		    	$.each(result.response,function(idx, thread){
 		    		thread.startDate = new Date(thread.createdAt).toLocaleString();
@@ -47,7 +47,7 @@ var loadThreads = function(cursor){
 						type: 'GET',
 						url: "https://disqus.com/api/3.0/users/details.jsonp",
 						data: { 
-							api_key: '',
+							api_key: 'lWEmapKgRGWmYLuX5INGRBtSx8WakniYLMkqlXngY5Hx84ODJlWGfG0rYib11BRm',
 							user : author
 						},
 						dataType: "jsonp",

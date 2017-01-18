@@ -13,7 +13,7 @@ var categoryId = qs['category'];
 var threadName = $("<div>"+qs['thread']+"</div>").text();
 
 // Set the Disqus Variables
-var disqus_shortname = ''; 
+var disqus_shortname = 'tigerknightstats'; 
 var disqus_identifier = threadName;
 var disqus_title = threadName;
 var disqus_category_id = categoryId;
@@ -33,7 +33,7 @@ $('.thread-title').html(threadName);
 //Get the category data
 $.ajax({
 	type: 'GET',
-	url: "/categories.json",
+	url: "/kingdomstats/categories.json",
 	cache: false,
 	dataType: "json",
 	success: function (categories) {
