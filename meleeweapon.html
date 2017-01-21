@@ -55,113 +55,76 @@
 									<li><a href="#">Veroeros feugiat</a></li>
 								</ul>
 							</li>
-							<li class="current"><a href="/kingdomstats/blog">Blog</a></li>
+							<li ><a href="/kingdomstats/blog">Blog</a></li>
 							<li ><a href="/kingdomstats/left-sidebar.html">Left Sidebar</a></li>
 							<li ><a href="/kingdomstats/right-sidebar.html">Right Sidebar</a></li>
-							<li ><a href="/kingdomstats/meleeweapon.html">Melee Weapons</a></li>
+							<li class="current"><a href="/kingdomstats/meleeweapon.html">Melee Weapons</a></li>
 							<li ><a href="/kingdomstats/forum.html">Forum</a></li>
 						</ul>
 					</nav>
 
 			</div>
 
-	<!-- Main -->
+	<link rel="stylesheet" type="text/css" href="./css/jquery.dataTables.min.css">
+
+<script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.4.js">
+</script>
+<script type="text/javascript" language="javascript" src="./js/jquery.dataTables.min.js">
+</script>
+<script type="text/javascript" language="javascript" class="init">
+
+$(document).ready(function() {
+	$('#hellotable').DataTable({ 
+			"ajax": './data/meleeweapon.json',
+			"columns": [
+			{ "data": "testname" },
+			{ "data": "testdamage" },
+			{ "data": "testcost" }
+			]
+	
+	});
+} );
+</script>
+
+<!-- Main -->
 	<section class="wrapper style1">
 		<div class="container">
 			<div id="content">
-				<div class="row">
-					<div class="12u">
+				<!-- Content -->
+					<article>
+						<header>
+							<h2>Melee weapons</h2>
+							<p>All content, all the time.</p>
+						</header>
 
-						<!-- Blog -->
-							<section>
-								<header class="major">
-									<h2>The Blog</h2>
-								</header>
-								
-									<div class="row">
-										<section class="12u">
-											<div class="box post">
-												<a href="#" class="image left"><img src="/kingdomstats" alt=""></a>
-												<div class="inner">
-													<h3>Welcome to Jekyll!</h3>
-													<p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+						<table id="hellotable" class="display" width="100%" cellspacing="0">
+							<thead>
+								<tr>
+									<th>testname</th>
+									<th>testdamage</th>
+									<th>testcost</th>
+								</tr>
+							</thead>
 
-
-													<footer>
-														<a href="/kingdomstats/jekyll/update/2017/01/18/welcome-to-jekyll.html" class="button">Continue Reading</a>
-													</footer>
-												</div>
-											</div>
-
-										</section>
-									</div>
-								
-									<div class="row">
-										<section class="12u">
-											<div class="box post">
-												<a href="#" class="image left"><img src="/kingdomstats/assets/images/pic01.jpg" alt=""></a>
-												<div class="inner">
-													<h3>Ullamco Laboris minim veniam</h3>
-													<ul class="links">
-	<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-	<li><a href="#">Ornare in hendrerit in lectus</a></li>
-	<li><a href="#">Semper mod quis eget mi dolore</a></li>
-	<li><a href="#">Consequat etiam lorem phasellus</a></li>
-	<li><a href="#">Amet turpis, feugiat et sit amet</a></li>
-	<li><a href="#">Semper mod quisturpis nisi</a></li>
-</ul>
-
-													<footer>
-														<a href="/kingdomstats/2014/08/31/hello-word.html" class="button">Continue Reading</a>
-													</footer>
-												</div>
-											</div>
-
-										</section>
-									</div>
-								
-									<div class="row">
-										<section class="12u">
-											<div class="box post">
-												<a href="#" class="image left"><img src="/kingdomstats/assets/images/pic02.jpg" alt=""></a>
-												<div class="inner">
-													<h3>Sunt in culpa qui</h3>
-													<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-													<footer>
-														<a href="/kingdomstats/2014/08/25/test-post.html" class="button">Continue Reading</a>
-													</footer>
-												</div>
-											</div>
-
-										</section>
-									</div>
-								
-									<div class="row">
-										<section class="12u">
-											<div class="box post">
-												<a href="#" class="image left"><img src="/kingdomstats/assets/images/pic03.jpg" alt=""></a>
-												<div class="inner">
-													<h3>Lorem Ipsum Dolor Sit Amet</h3>
-													<p>Reprehenderit in voluptate velit esse cillum non proident, sunt in culpa qui officia  sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
-<p>Duis aute irure dolor in reprehenderit in voluptate reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia . Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-													<footer>
-														<a href="/kingdomstats/2014/08/20/another-post.html" class="button">Continue Reading</a>
-													</footer>
-												</div>
-											</div>
-
-										</section>
-									</div>
-								
-							</section>
-
-					</div>
-				</div>
+							<tfoot>
+								<tr>
+									<th>testname</th>
+									<th>testdamage</th>
+									<th>testcost</th>
+								</tr>
+							</tfoot>
+						</table>
+						
+						<h3>And Yet Another Subheading</h3>
+						<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus. 
+						Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat. 
+						Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi 
+						consequat etiam lorem ipsum dolor sit amet nullam.</p>
+					</article>
+		
+			</div>
 		</div>
-	</section>
+	</section>			
 		<!-- Footer -->
 			<div id="footer">
 				<div class="container">
