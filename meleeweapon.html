@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Arcana by HTML5 UP</title>
+		<title>Tiger Knight Stats</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -29,7 +29,7 @@
 			<div id="header">
 						
 				<!-- Logo -->
-					<h1><a href="/kingdomstats/index.html" id="logo">Arcana <em>by HTML5 UP</em></a></h1>
+					<h1><a href="/kingdomstats/index.html" id="logo"><em>Tiger Knight</em> Stats</a></h1>
 				
 				<!-- Nav -->
 					<nav id="nav">
@@ -75,13 +75,15 @@
 
 $(document).ready(function() {
 	$('#hellotable').DataTable({ 
-			"ajax": './data/meleeweapon.json',
+			"ajax": './data/0071/meleeweapon.json',
 			"columns": [
-			{ "data": "testname" },
-			{ "data": "testdamage" },
-			{ "data": "testcost" }
+			{ "data": "ItemName" },
+			{ "data": "ItemDescription" },
+			{ "data": "DoHurtAnimTime" },
+			{ "data": "SprintAttackTime" },
+			{ "data": "fWeaponLength" },
+			{ "data": "FiringTime" }
 			]
-	
 	});
 } );
 </script>
@@ -100,17 +102,23 @@ $(document).ready(function() {
 						<table id="hellotable" class="display" width="100%" cellspacing="0">
 							<thead>
 								<tr>
-									<th>testname</th>
-									<th>testdamage</th>
-									<th>testcost</th>
+									<th>ItemName</th>
+									<th>ItemDescription</th>
+									<th>DoHurtAnimTime</th>
+									<th>SprintAttackTime</th>
+									<th>fWeaponLength</th>
+									<th>FiringTime</th>
 								</tr>
 							</thead>
 
 							<tfoot>
 								<tr>
-									<th>testname</th>
-									<th>testdamage</th>
-									<th>testcost</th>
+									<th>ItemName</th>
+									<th>ItemDescription</th>
+									<th>DoHurtAnimTime</th>
+									<th>SprintAttackTime</th>
+									<th>fWeaponLength</th>
+									<th>FiringTime</th>
 								</tr>
 							</tfoot>
 						</table>
@@ -137,10 +145,6 @@ $(document).ready(function() {
 										<li><a href="#">Mattis et quis rutrum</a></li>
 										<li><a href="#">Suspendisse amet varius</a></li>
 										<li><a href="#">Sed et dapibus quis</a></li>
-										<li><a href="#">Rutrum accumsan dolor</a></li>
-										<li><a href="#">Mattis rutrum accumsan</a></li>
-										<li><a href="#">Suspendisse varius nibh</a></li>
-										<li><a href="#">Sed et dapibus mattis</a></li>
 									</ul>
 								</section>
 								<section class="6u">
@@ -149,38 +153,13 @@ $(document).ready(function() {
 										<li><a href="#">Duis neque nisi dapibus</a></li>
 										<li><a href="#">Sed et dapibus quis</a></li>
 										<li><a href="#">Rutrum accumsan sed</a></li>
-										<li><a href="#">Mattis et sed accumsan</a></li>
-										<li><a href="#">Duis neque nisi sed</a></li>
-										<li><a href="#">Sed et dapibus quis</a></li>
-										<li><a href="#">Rutrum amet varius</a></li>
 									</ul>
 								</section>
 							</div>
 						</div>
 						<section class="6u">
-							<h3>Get In Touch</h3>
-							<form>
-								<div class="row half collapse-at-2">
-									<div class="6u">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="6u">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<textarea name="message" id="message" placeholder="Message" rows="5"></textarea>
-									</div>
-								</div>
-								<div class="row half">
-									<div class="12u">
-										<ul class="actions">
-											<li><input type="submit" class="button alt" value="Send Message" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
+							<h3>Geez</h3>
+
 						</section>
 					</div>
 				</div>
