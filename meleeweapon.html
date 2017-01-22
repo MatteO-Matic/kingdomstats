@@ -75,6 +75,7 @@
 
 $(document).ready(function() {
 	$('#hellotable').DataTable({ 
+			"iDisplayLength": 50,
 			"ajax": './data/0071/meleeweapon.json',
 			"columns": [
 			{ "data": "ItemName" },
