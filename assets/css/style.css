@@ -194,7 +194,7 @@
 	input[type="text"],
 	input[type="password"],
 	input[type="email"] {
-		line-height: 1em;
+		line-height: 0.5em;
 	}
 
 	label {
