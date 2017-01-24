@@ -40,15 +40,15 @@ table.dataTable {
     background-repeat: no-repeat;
     background-position: center right; }
   table.dataTable thead .sorting {
-    background-image: url("../assets/images/sort_both.png"); }
+    background-image: url("../images/sort_both.png"); }
   table.dataTable thead .sorting_asc {
-    background-image: url("../assets/images/sort_asc.png"); }
+    background-image: url("../images/sort_asc.png"); }
   table.dataTable thead .sorting_desc {
-    background-image: url("../assets/images/sort_desc.png"); }
+    background-image: url("../images/sort_desc.png"); }
   table.dataTable thead .sorting_asc_disabled {
-    background-image: url("../assets/images/sort_asc_disabled.png"); }
+    background-image: url("../images/sort_asc_disabled.png"); }
   table.dataTable thead .sorting_desc_disabled {
-    background-image: url("../assets/images/sort_desc_disabled.png"); }
+    background-image: url("../images/sort_desc_disabled.png"); }
   table.dataTable tbody tr {
     font-size: 13pt;
   }
@@ -58,10 +58,7 @@ table.dataTable {
       background-color: #b0bed9; }
   table.dataTable tbody th,
   table.dataTable tbody td {
-    white-space: nowrap; 
-    overflow: hidden;
     padding: 4px 5px; }
-    
   table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
     border-top: 1px solid #dddddd; }
   table.dataTable.row-border tbody tr:first-child th,
