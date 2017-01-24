@@ -66,6 +66,7 @@
 			</div>
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="./assets/css/filter.dataTables.css">
 
 <script type="text/javascript" language="javascript" src="//code.jquery.com/jquery-1.12.4.js">
 </script>
@@ -73,18 +74,40 @@
 </script>
 <script type="text/javascript" language="javascript" class="init">
 
+$.fn.dataTable.ext.search.push(
+    function( settings, data, dataIndex ) {
+        var min = parseInt( $('#min').val(), 10 );
+        var max = parseInt( $('#max').val(), 10 );
+        var lvl = parseFloat( data[1] ) || 0; // use data for the lvl column
+ 
+        if ( ( isNaN( min ) && isNaN( max ) ) ||
+             ( isNaN( min ) && lvl <= max ) ||
+             ( min <= lvl   && isNaN( max ) ) ||
+             ( min <= lvl   && lvl <= max ) )
+        {
+            return true;
+        }
+        return false;
+    }
+);
+
 $(document).ready(function() {
-	$('#hellotable').DataTable({ 
+	var table = $('#hellotable').DataTable({ 
 			"iDisplayLength": 50,
 			"ajax": './data/0071/meleeweapon.json',
 			"columns": [
 			{ "data": "ItemName" },
+			{ "data": "Level" },
 			{ "data": "FrontWeaponPartName" },
 			{ "data": "BackWeaponPartName" },
 			{ "data": "fWeaponLength" },
 			{ "data": "FiringTime" }
 			]
 	});
+	// Event listener to the two range filtering inputs to redraw on input
+    $('#min, #max').keyup( function() {
+        table.draw();
+    } );
 } );
 </script>
 
@@ -98,11 +121,24 @@ $(document).ready(function() {
 							<h2>Melee weapons</h2>
 							<p>All content, all the time.</p>
 						</header>
+						<table class = "filter" cellspacing="5" cellpadding="5" border="0">
+							<tbody>
+								<tr>
+									<td>
+										Lvl: 
+										<input id="min" name="min" type="text">
+										-
+										<input id="max" name="max" type="text">
+									</td>
+								</tr>
+							</tbody>
+						</table>
 
 						<table id="hellotable" class="display" width="100%" cellspacing="0">
 							<thead>
 								<tr>
 									<th>Name</th>
+									<th>Lvl</th>
 									<th>Type</th>
 									<th>Handle</th>
 									<th>Length</th>
@@ -113,6 +149,7 @@ $(document).ready(function() {
 							<tfoot>
 								<tr>
 									<th>Name</th>
+									<th>Lvl</th>
 									<th>Type</th>
 									<th>Handle</th>
 									<th>Length</th>

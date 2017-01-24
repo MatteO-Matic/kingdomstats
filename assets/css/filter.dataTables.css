@@ -1,0 +1,12 @@
+
+ .filter table {
+   display: inline;
+
+ }
+
+ .filter input{
+    display: inherit;
+    padding: 0.4em;
+    text-align: center;
+    width: 3em;
+ }
