@@ -23,11 +23,14 @@ $(document).ready(function() {
 			{ "data": "ItemName" },
 			{ "data": "Level" },
 			{ "data": "FrontWeaponPartName" },
-			{ "data": "BackWeaponPartName" },
-			{ "data": "fWeaponLength" },
-			{ "data": "FiringTime" }
+			{ "data": "DpsCut" },
+            { "data": "DpsPuncture" },
+            { "data": "WeaponFetchingTime" },
+			{ "data": "fWeaponLength" }
 			]
 	});
+    
+
 	// Event listener to the two range filtering inputs to redraw on input
     $('#min, #max').keyup( function() {
         table.draw();
