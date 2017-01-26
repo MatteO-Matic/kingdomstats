@@ -156,12 +156,14 @@ var defaultchecked = [];
 var stringConstructor = "test".constructor;
 var arrayConstructor = [].constructor;
 var objectConstructor = {}.constructor;
+var column_level_index = 0;
 
+//I think this function is heavier for the browser then it's needed, todo fix. (unnecessary calls)
   $.fn.dataTable.ext.search.push(
     function( settings, data, dataIndex ) {
         var min = parseInt( $('#min').val(), 10 );
         var max = parseInt( $('#max').val(), 10 );
-        var lvl = parseFloat( data[29] ) || 0; // use data for the lvl column
+        var lvl = parseFloat( data[column_level_index] ) || 0; // use data for the lvl column
  
         if ( ( isNaN( min ) && isNaN( max ) ) ||
              ( isNaN( min ) && lvl <= max ) ||
@@ -177,6 +179,7 @@ var objectConstructor = {}.constructor;
 function populatetableranged() {
     tablecolumns = rangedcolumns;
     ajaxdata = "./data/0072/rangedweapon.json";
+    column_level_index = 29;
 
     /* Table default checked */
     defaultchecked = [
@@ -191,6 +194,8 @@ function populatetableranged() {
 function populatetablemelee(){
     tablecolumns = meleecolumns;
     ajaxdata = "./data/0072/meleeweapon.json";
+    column_level_index = 48;
+
     /* Table default checked */
     defaultchecked = [
         "checkbox_ItemName",
@@ -204,6 +209,7 @@ function populatetablemelee(){
 function populatetablearmor(){
     tablecolumns = armorcolumns;
     ajaxdata = "./data/0072/armor.json";
+    column_level_index = 19;
     /* Table default checked */
     defaultchecked = [
         "checkbox_ItemName",

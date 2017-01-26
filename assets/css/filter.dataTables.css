@@ -1,10 +1,11 @@
 
- .filter table {
+ .filter-small table {
    display: inline;
 
  }
 
- .filter input{
+
+ .filter-small input{
     display: inherit;
     padding: 0.4em;
     text-align: center;
