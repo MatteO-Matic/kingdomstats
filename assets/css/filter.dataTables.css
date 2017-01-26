@@ -6,7 +6,8 @@
 
 
  .filter-small input{
-    display: inherit;
+    display: inline;
+
     padding: 0.4em;
     text-align: center;
     width: 3em;
