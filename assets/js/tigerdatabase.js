@@ -158,6 +158,7 @@ var arrayConstructor = [].constructor;
 var objectConstructor = {}.constructor;
 var column_level_index = 0;
 
+
 //I think this function is heavier for the browser then it's needed, todo fix. (unnecessary calls)
   $.fn.dataTable.ext.search.push(
     function( settings, data, dataIndex ) {
@@ -298,6 +299,25 @@ function urlObject(options) {
     };
 
     return urlObj;
+}
+
+function getDataTableUrl(){
+    //var table = document.getElementById("hellotable");
+
+    //oTable.fnSettings().aoColumn[ i ].bVisible)
+    //console.debug(table.settings);
+    var table = $('#hellotable').DataTable();
+
+    var rstr = window.location.origin + window.location.pathname +"?";
+
+    table.columns().every( function () {
+        if (this.visible())
+        {
+            rstr += "cf="+ $(this.header()).text()+"&";
+        }
+    } );
+    
+    return rstr;
 }
 
 $(document).ready(function() {
