@@ -1,2 +1,47 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-02-03T06:46:58+01:00</updated><id>http://localhost:4000//</id><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-</subtitle><entry><title type="html">Hello world!</title><link href="http://localhost:4000/2017/01/25/helloworld.html" rel="alternate" type="text/html" title="Hello world!" /><published>2017-01-25T00:00:00+01:00</published><updated>2017-01-25T00:00:00+01:00</updated><id>http://localhost:4000/2017/01/25/helloworld</id><content type="html" xml:base="http://localhost:4000/2017/01/25/helloworld.html">&lt;p&gt;And now the site is live and here is the first post!.&lt;/p&gt;</content><summary type="html">And now the site is live and here is the first post!.</summary></entry></feed>
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/kingdomstats/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/kingdomstats/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/kingdomstats/" rel="alternate" type="text/html" /><updated>2017-02-03T09:17:49+01:00</updated><id>http://localhost:4000/kingdomstats//</id><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</subtitle><entry><title type="html">tkstats.info!</title><link href="http://localhost:4000/kingdomstats/2017/02/03/andimback.html" rel="alternate" type="text/html" title="tkstats.info!" /><published>2017-02-03T00:00:00+01:00</published><updated>2017-02-03T00:00:00+01:00</updated><id>http://localhost:4000/kingdomstats/2017/02/03/andimback</id><content type="html" xml:base="http://localhost:4000/kingdomstats/2017/02/03/andimback.html">&lt;p&gt;
+    Fixed a proper domain name, so welcome to tkstats.info. Seems like both a good and logical name to me.&lt;br /&gt;
+    One step forward with this project but many left to go! I have a few things I'm thinking about to fix and add to in future.
+    &lt;ul class=&quot;bullet&quot;&gt;
+        &lt;li&gt;Add analyctis&lt;/li&gt;
+        &lt;div&gt;I feel like I must add somekind of analyctis before I give the site any form of publicity.&lt;/div&gt;
+        &lt;li&gt;About page&lt;/li&gt;
+        &lt;div&gt;&lt;/div&gt;
+        &lt;li&gt;Change website theme&lt;/li&gt;
+        &lt;div&gt;I'm currently working on a new theme using bootstrap, didn't really like the way it ended up right now.&lt;/div&gt;
+        &lt;li&gt;Create a page for each item&lt;/li&gt;
+        &lt;div&gt;This is a static website, so I need to either write a python script that generates all the pages or some javascript does all the work. The result should be the same but I guess it's my disk space vs page CPU load.&lt;/div&gt;
+        &lt;li&gt;Add the forum&lt;/li&gt;
+        &lt;div&gt;I have a been working with a disqus forum I'll integrate later when it's finished, apart from having a /forum place for &quot;general topics&quot; I'm planning that each item page that is generated should also include a comment section where you can drop a comment regarding that item.&lt;/div&gt;
+        &lt;li&gt;Changelogs&lt;/li&gt;
+        &lt;div&gt;I'll be saving all the patches that I datamine and make diff logs, would be nice to see what changes the weapons/armors get for each patch.&lt;/div&gt;
+    &lt;/ul&gt;
+    &lt;p&gt;
+        And so on, that was a few things from off the top of my head.
+    &lt;/p&gt;
+    &lt;div class=&quot;more&quot;&gt;...&lt;/div&gt;
+&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;
+    Currently the data represent the values of the game patch 0.0.72, it should be fairly up-to-date by the time I'm writing this this post.
+    Unfortunately my graphic card died recently, so a new update on the values might take a little bit longer then expected.
+&lt;/p&gt;</content><summary type="html">Fixed a proper domain name, so welcome to tkstats.info. Seems like both a good and logical name to me.
+    One step forward with this project but many left to go! I have a few things I'm thinking about to fix and add to in future.
+    
+        Add analyctis
+        I feel like I must add somekind of analyctis before I give the site any form of publicity.
+        About page
+        
+        Change website theme
+        I'm currently working on a new theme using bootstrap, didn't really like the way it ended up right now.
+        Create a page for each item
+        This is a static website, so I need to either write a python script that generates all the pages or some javascript does all the work. The result should be the same but I guess it's my disk space vs page CPU load.
+        Add the forum
+        I have a been working with a disqus forum I'll integrate later when it's finished, apart from having a /forum place for &quot;general topics&quot; I'm planning that each item page that is generated should also include a comment section where you can drop a comment regarding that item.
+        Changelogs
+        I'll be saving all the patches that I datamine and make diff logs, would be nice to see what changes the weapons/armors get for each patch.
+    
+    
+        And so on, that was a few things from off the top of my head.
+    
+    ...</summary></entry><entry><title type="html">Hello world!</title><link href="http://localhost:4000/kingdomstats/2017/01/25/helloworld.html" rel="alternate" type="text/html" title="Hello world!" /><published>2017-01-25T00:00:00+01:00</published><updated>2017-01-25T00:00:00+01:00</updated><id>http://localhost:4000/kingdomstats/2017/01/25/helloworld</id><content type="html" xml:base="http://localhost:4000/kingdomstats/2017/01/25/helloworld.html">&lt;p&gt;And now the site is live and here is the first post!.&lt;/p&gt;</content><summary type="html">And now the site is live and here is the first post!.</summary></entry></feed>
