@@ -9,7 +9,13 @@ table.dataTable td {
 padding: 3px 10px;
 width: 1px;
 white-space: nowrap;
-} 
+}
+
+table.dataTable tr {
+cursor: pointer;
+}
+
+
 
 
 div.more{
