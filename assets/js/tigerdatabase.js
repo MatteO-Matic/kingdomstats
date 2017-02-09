@@ -323,6 +323,7 @@ function getDataTableUrl(){
 $(document).ready(function() {
 
     var url = window.location.href;
+
     var url_params = urlObject(url).parameters;
     
     var cols = [];
@@ -358,6 +359,18 @@ $(document).ready(function() {
     });
 
     table.rows.add(tablecolumns).draw();
+
+    $('#hellotable').delegate('tbody > tr', 'click', function ()
+    {
+        var data = table.row( this ).data();
+        window.open("/item/"+data.ItemId);
+    });
+
+    // $('#hellotable tbody').on('click', 'tr', function () {
+    //     var data = table.row( this ).data();
+        
+    //     alert( 'You clicked on '+data.ItemId+'\'s row' );
+    // } );
 
     if (url_params.cf != null)
     {
@@ -398,6 +411,7 @@ $(document).ready(function() {
     $('#min, #max').keyup( function() {
         table.draw();
     } );
+
 
     function togglecheckbox(itemID){
         element = document.getElementById(itemID);
