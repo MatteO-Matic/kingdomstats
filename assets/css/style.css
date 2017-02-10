@@ -1,6 +1,49 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
 
+/* Item Cards */
+div.itemcard{
+	background: #1b1c1e;
+	/*Orginal
+	width: 325px;
+	height: 475px;
+	*/
+	width: 355px;
+	height: 505px;
+	padding: 10px 20px 10px 20px;
+	margin: auto;
+}
+
+div.itemcard > h1{
+	color: #d6cf99;
+	font-size: 14px;
+	margin: inherit;
+}
+
+div.itemcard > p{
+	color: #888888;
+	font-size: 13px;
+	margin: inherit;
+}
+
+div.itemcard > hr{
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(88, 88, 88, 0.75), rgba(0, 0, 0, 0));
+	margin: inherit;
+}
+
+div.itemcard > b{
+	color: white;
+	margin: inherit;
+}
+
+
+
+span.right{
+	float:right;
+}
+
 .todo{
 	text-decoration: line-through;
 }
