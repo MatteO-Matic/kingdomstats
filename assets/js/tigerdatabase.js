@@ -357,7 +357,6 @@ $(document).ready(function() {
             }
         ]
     });
-    
 
     table.rows.add(tablecolumns).draw();
 
