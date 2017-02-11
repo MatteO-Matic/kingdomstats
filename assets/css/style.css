@@ -39,6 +39,9 @@ div.itemcard > b{
 }
 
 
+div.table-holder{
+	max-width: 100%;
+}
 
 span.right{
 	float:right;
