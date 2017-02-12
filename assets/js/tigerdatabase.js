@@ -200,7 +200,6 @@ function populatetablemelee(){
     /* Table default checked */
     defaultchecked = [
         "checkbox_ItemName",
-        "checkbox_WeaponFetchingTime",
         "checkbox_Level",
         "checkbox_Attackspeed",
         "checkbox_DpsCut",
