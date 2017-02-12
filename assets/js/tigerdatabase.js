@@ -343,6 +343,7 @@ $(document).ready(function() {
     var table = $('#hellotable').DataTable({
         "columns": cols,
         "paging": true,
+        "scrollX": true,
         "iDisplayLength": 50,
         "ajax": ajaxdata,
         "columnDefs": [

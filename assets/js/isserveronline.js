@@ -26,23 +26,25 @@ function signal(val) {
             default:
                 document.getElementById("server" + i).innerHTML = "Unknown";
                 $('#server' + i).addClass('major');
-
         }
     }
+}
+function currentPlayersSignal(val) {
+    document.getElementById("playercount").innerHTML = val.response.player_count;
 }
 
 $(document).ready(function () {
     $.ajax({
-        type: "get",
+        type: "GET",
         url: "http://manager.hw.99.com/signals.php",
         dataType: "jsonp",
-        success: function (json) {
-        }
+        success : function(json){}
     });
 
-    // http://manager.hw.99.com/signals.php
-
-
-    //     EU West Low Load
-    // EU East Medium Load
+    $.ajax({
+        type: "GET",
+        url: "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?key=5A2E34A7B75896691F0FF3A5EED5CAF9&format=json&appid=534500&jsonp=currentPlayersSignal",
+        dataType: "jsonp",
+        success : currentPlayersSignal
+    });
 });
