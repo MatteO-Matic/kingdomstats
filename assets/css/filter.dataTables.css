@@ -1,1 +1,14 @@
-.filter-small table{display:inline}.filter-small input{display:inline;padding:.4em;text-align:center;width:3em}
+
+ .filter-small table {
+   display: inline;
+
+ }
+
+
+ .filter-small input{
+    display: inline;
+
+    padding: 0.4em;
+    text-align: center;
+    width: 3em;
+ }

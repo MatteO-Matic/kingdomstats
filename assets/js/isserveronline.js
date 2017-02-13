@@ -1,1 +1,50 @@
-function signal(e){for(var r=JSON.parse(e),a=0;3>a;a++)switch(r[a].status){case-1:document.getElementById("server"+a).innerHTML="Query failed",$("#server"+a).addClass("major");break;case 0:document.getElementById("server"+a).innerHTML="Server closed",$("#server"+a).addClass("major");break;case 1:document.getElementById("server"+a).innerHTML="Low load",$("#server"+a).addClass("good");break;case 2:document.getElementById("server"+a).innerHTML="Medium load",$("#server"+a).addClass("minor");break;case 3:document.getElementById("server"+a).innerHTML="High load",$("#server"+a).addClass("high");break;default:document.getElementById("server"+a).innerHTML="Unknown",$("#server"+a).addClass("major")}}function currentPlayersSignal(e){document.getElementById("playercount").innerHTML=e.response.player_count}$(document).ready(function(){$.ajax({type:"GET",url:"http://manager.hw.99.com/signals.php",dataType:"jsonp",success:function(e){}}),$.ajax({type:"GET",url:"https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?key=5A2E34A7B75896691F0FF3A5EED5CAF9&format=json&appid=534500&jsonp=currentPlayersSignal",dataType:"jsonp",success:currentPlayersSignal})});
+function signal(val) {
+    var json = JSON.parse(val);
+    // -1: Query failed 0: Not open 1: Low load 2: Heavy load 3: High load
+    for (var i = 0; i < 3; i++) {
+        switch (json[i]['status']) {
+            case -1:
+                document.getElementById("server" + i).innerHTML = "Query failed";
+                $('#server' + i).addClass('major');
+                break;
+            case 0:
+                document.getElementById("server" + i).innerHTML = "Server closed";
+                $('#server' + i).addClass('major');
+                break;
+            case 1:
+                document.getElementById("server" + i).innerHTML = "Low load";
+                $('#server' + i).addClass('good');
+                break;
+            case 2:
+                document.getElementById("server" + i).innerHTML = "Medium load";
+                $('#server' + i).addClass('minor');
+                break;
+            case 3:
+                document.getElementById("server" + i).innerHTML = "High load";
+                $('#server' + i).addClass('high');
+                break;
+            default:
+                document.getElementById("server" + i).innerHTML = "Unknown";
+                $('#server' + i).addClass('major');
+        }
+    }
+}
+function currentPlayersSignal(val) {
+    document.getElementById("playercount").innerHTML = val.response.player_count;
+}
+
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "http://manager.hw.99.com/signals.php",
+        dataType: "jsonp",
+        success : function(json){}
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "https://api.steampowered.com/ISteamUserStats/GetNumberOfCurrentPlayers/v1/?key=5A2E34A7B75896691F0FF3A5EED5CAF9&format=json&appid=534500&jsonp=currentPlayersSignal",
+        dataType: "jsonp",
+        success : currentPlayersSignal
+    });
+});
