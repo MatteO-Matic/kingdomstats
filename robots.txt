@@ -1,1 +1,1 @@
-Sitemap: //tkstats.info/sitemap.xml
+Sitemap: https://tkstats.info/sitemap.xml
