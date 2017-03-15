@@ -1,0 +1,64 @@
+{
+  "data": {
+    "28012007": {
+      "ItemDescription": {
+        "__old": "2-handed Curved Blade",
+        "__new": "1-handed Curved Blade"
+      }
+    },
+    "28012008": {
+      "ItemDescription": {
+        "__old": "2-handed Curved Blade",
+        "__new": "1-handed Curved Blade"
+      }
+    },
+    "28013005": {
+      "ItemDescription": {
+        "__old": "2-handed Peck Axe",
+        "__new": "1-handed Peck Axe"
+      }
+    },
+    "28013007": {
+      "ItemDescription": {
+        "__old": "2-handed Peck Axe",
+        "__new": "1-handed Peck Axe"
+      }
+    },
+    "28013012": {
+      "ItemDescription": {
+        "__old": "2-handed Battleaxe",
+        "__new": "1-handed Battleaxe"
+      }
+    },
+    "38040006": {
+      "ItemDescription": {
+        "__old": "Heavy Javelin",
+        "__new": "Long Pike (Can be equipped with Shield)"
+      }
+    },
+    "38040008": {
+      "ItemDescription": {
+        "__old": "Heavy Javelin",
+        "__new": "Long Pike (Can be equipped with Shield)"
+      }
+    },
+    "38040009": {
+      "ItemDescription": {
+        "__old": "Heavy Javelin",
+        "__new": "Long Pike (Can be equipped with Shield)"
+      }
+    },
+    "88013004": {
+      "ItemName": {
+        "__old": "驅鬼金戈",
+        "__new": "Ghost Axe"
+      }
+    },
+    "98012014": {
+      "ItemDescription": {
+        "__old": "2-handed Blade",
+        "__new": "1-handed Blade"
+      }
+    }
+  }
+}
